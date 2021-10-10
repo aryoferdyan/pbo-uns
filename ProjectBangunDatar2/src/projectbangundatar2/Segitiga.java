@@ -21,7 +21,9 @@ public class Segitiga {
     double hitungKeliling(double x, double y){
         //x alas
         //y tinggi
-        double sisiMiring = Math.sqrt(hitungKuadrat(0.5*x)+hitungKuadrat(y)); 
-        return(2*sisiMiring+x);
+        //double sisiMiring = Math.sqrt(hitungKuadrat(0.5*x)+hitungKuadrat(y)); 
+        //return(2*sisiMiring+x);
+        double sisiMiring = Math.sqrt(hitungKuadrat(x)+hitungKuadrat(y));
+        return(sisiMiring+x+y);
     }
 }
