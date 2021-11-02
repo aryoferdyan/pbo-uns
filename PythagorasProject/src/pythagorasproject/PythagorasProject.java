@@ -24,7 +24,7 @@ public class PythagorasProject {
         int menu;
                
         Pythagoras x = new Pythagoras();
-        Scanner input = new Scanner(System.in);
+        Scanner inp = new Scanner(System.in);
         
         
         while(true) {
@@ -37,31 +37,31 @@ public class PythagorasProject {
                     "4. Exit");
             
             System.out.print("Pilih Menu : ");
-            menu = input.nextInt();
+            menu = inp.nextInt();
             
             switch(menu) {
                 case 1:
                     System.out.print("Nilai a : ");
-                    a = input.nextInt();
+                    a = inp.nextInt();
                     System.out.print("Nilai b : ");
-                    b = input.nextInt();
+                    b = inp.nextInt();
                     System.out.print("Nilai c : ");
-                    c = input.nextInt();                    
+                    c = inp.nextInt();                    
                     x.triple(a,b,c);
                     break;
                 case 2:
                     System.out.print("Nilai a : ");
-                    a = input.nextInt();
+                    a = inp.nextInt();
                     System.out.print("Nilai b : ");
-                    b = input.nextInt();
+                    b = inp.nextInt();
                     double sismiring = x.hitungSisiMiring(a, b);
                     System.out.println("Nilai c : " +sismiring);
                     break;
                 case 3:
                     System.out.print("Nilai a : ");
-                    a = input.nextInt();
+                    a = inp.nextInt();
                     System.out.print("Nilai c : ");
-                    c = input.nextInt();
+                    c = inp.nextInt();
                     double sissiku = x.hitungSisiSiku(a, c);
                     System.out.println("Nilai B yaitu " +sissiku);
                     break;
